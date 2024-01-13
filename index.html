@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up 2</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            height: 90%;
+            width: 40%;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        form {
+            text-align: left;
+            padding: 10%;
+            color: blue;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        input {
+            margin-left: 2%;
+            width: 80%;
+            height: 30px;
+            border: 2px solid lawngreen;
+            border-radius: 25px;
+            margin-bottom: 5%;
+            margin-right: 10%;
+        }
+
+        label {
+            margin-left: 3%;
+        }
+
+        .text {
+            font-size: 18px;
+            background-image: url(./down-arrow-svgrepo-com.svg);
+            background-size: 5%;
+            background-repeat: no-repeat;
+            background-position: 95%;
+        }
+
+        .text::placeholder {
+            position: relative;
+            left: 2%;
+        }
+
+        @media(max-width: 680px) {
+            .main {
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body class="flex">
+    <div class="main">
+       <h1>Sign Up Form</h1>
+       <form>
+        <label>User Id</label>
+        <input type="text">
+        <label>Password</label>
+        <input type="text">
+        <label>Name</label>
+        <input type="text">
+        <label>Country</label>
+        <input class="text" placeholder="Select An Option" type="text">
+        <label>Zip Code</label>
+        <input type="text">
+        <label>Email</label>
+        <input type="text">
+       </form>
+    </div>
+</body>
+</html>
